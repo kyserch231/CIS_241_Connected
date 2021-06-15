@@ -1,0 +1,233 @@
+Script started on Mon Jun 14 23:51:31 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ ls
+a.out		assignment4	assignment4.c	assignment4.log	integers.c	strings.c
+bash-3.2$ clang assignment4.c
+bash-3.2$ ./a.out
+
+Enter an operation code: ouhrbfg
+
+Error: Invalid Operation Code
+Enter an operation code: 230875
+
+Error: Invalid Operation Code
+Enter an operation code: f4
+
+Error: Invalid Operation Code
+Enter an operation code: f
+
+Error: Invalid Operation Code
+Enter an operation code: w
+
+Error: Invalid Operation Code
+Enter an operation code: 
+
+
+Error: Invalid Operation Code
+Enter an operation code: r
+
+Enter the number of kWh found on your meter: 
+
+
+300kwh
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: r R
+
+Enter the number of kWh found on your meter: 300K kWh
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: r
+
+Enter the number of kWh found on your meter: 300   700
+
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: urhg
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 4f
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: S
+
+Enter the number of peak kWh found on your meter: f
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: S4
+
+Error: Invalid Operation Code
+Enter an operation code: S
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: 400kWh
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 300kWh
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: 400
+
+The amount owed calculated using residential summer on-peak basic rate is $132.23.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: -4
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: -400
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: s r
+
+Enter the number of kWh found on your meter: -4
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: r
+
+Enter the number of kWh found on your meter: -400
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: ieruug
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 20-3985j
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: c C
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: 400kwh
+
+Error: Invalid Entry. Enter only a number.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: 400
+
+The amount owed calculated using residential summer on-peak basic rate is $132.23.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential service non-transmitting meter rate.
+If you don't you will pay %7 more using the residential summer on-peak basic rate.
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 300
+
+Enter the number of off-peak kWh found on your meter: 400
+
+The amount owed calculated using residential summer on-peak basic rate is $132.23.
+Enter an operation code: r
+
+Enter the number of kWh found on your meter: 700
+
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+Enter an operation code: [ieg
+
+Error: Invalid Operation Code
+Enter an operation code: ;
+
+Error: Invalid Operation Code
+Enter an operation code: \n
+
+Error: Invalid Operation Code
+Enter an operation code: *\n
+
+Error: Invalid Operation Code
+Enter an operation code: *400
+
+Error: Invalid Operation Code
+Enter an operation code: r
+
+Enter the number of kWh found on your meter: *400
+
+Error: Invalid Entry. Enter only a positive number.
+Enter an operation code: S 500\ 
+
+Error: Invalid Operation Code
+Enter an operation code: s 
+
+Error: Invalid Operation Code
+Enter an operation code: s
+
+Enter the number of peak kWh found on your meter: 400
+
+Enter the number of off-peak kWh found on your meter: 2
+
+The amount owed calculated using residential summer on-peak basic rate is $90.51.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 400
+
+Enter the number of off-peak kWh found on your meter: 300
+
+The amount owed calculated using residential summer on-peak basic rate is $137.14.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential service non-transmitting meter rate.
+If you don't you will pay %11 more using the residential summer on-peak basic rate.
+Enter an operation code: s c
+
+Enter the number of peak kWh found on your meter: 400   200
+
+Enter the number of off-peak kWh found on your meter: 500
+
+The amount owed calculated using residential summer on-peak basic rate is $127.33.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential service non-transmitting meter rate.
+If you don't you will pay %3 more using the residential summer on-peak basic rate.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 100
+
+Enter the number of off-peak kWh found on your meter: 600
+
+The amount owed calculated using residential summer on-peak basic rate is $122.43.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential summer on-peak basic rate.
+If you don't you will pay %1 more using the residential service non-transmitting meter rate.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 3 3
+
+Enter the number of off-peak kWh found on your meter: 697
+
+The amount owed calculated using residential summer on-peak basic rate is $117.68.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential summer on-peak basic rate.
+If you don't you will pay %5 more using the residential service non-transmitting meter rate.
+Enter an operation code: c
+
+Enter the number of peak kWh found on your meter: 697.12
+
+Enter the number of off-peak kWh found on your meter: 2.88
+
+The amount owed calculated using residential summer on-peak basic rate is $151.70.
+The amount owed calculated using the residential service non-transmitting meter rate is $123.13.
+You should calculate the electric bill using the residential service non-transmitting meter rate.
+If you don't you will pay %23 more using the residential summer on-peak basic rate.
+Enter an operation code: q
+bash-3.2$ exit
+exit
+
+Script done on Mon Jun 14 23:58:01 2021

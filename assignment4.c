@@ -13,7 +13,7 @@ int main(){
 
 	while(i){
 		printf("\nEnter an operation code: ");
-		scanf("%c%*c",&in);
+		scanf("%c",&in);
 	
 		switch(in){
 			case 'Q':
@@ -59,6 +59,7 @@ int main(){
 				printf("\nError: Invalid Operation Code");
 
 		}
+		fflush(stdin);
 	}
 	return 0;
 }

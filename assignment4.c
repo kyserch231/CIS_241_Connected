@@ -4,6 +4,7 @@ double R(double* kwh);
 double S(double* kwhPeak, double* kwhOffPeak);
 int checkNum(double* pkWh);
 int checkNumS(double* pkWhPeak, double* pkWhOffPeak);
+void clean_stdin(void);
 
 int main(){
 	int i=1;
@@ -64,7 +65,7 @@ int main(){
 				printf("\nError: Invalid Operation Code");
 
 		}
-		fflush(stdin);
+		clean_stdin();
 	}
 	return 0;
 }
@@ -97,14 +98,14 @@ int checkNum(double* pkWh){
 	if(scanf("%lf", pkWh) == 1 && *pkWh > 0){
 		scanf("%c", &enter);
 		if(enter != '\n'){
-			fflush(stdin);
+			clean_stdin();
 			printf("\nError: Invalid Entry. Enter only a number.");
 			return 0;
 		}
 		return 1;
 	}
 	else{
-		fflush(stdin);
+		clean_stdin();
 		printf("\nError: Invalid Entry. Enter only a positive number.");
 		return 0;
 	}
@@ -115,7 +116,7 @@ int checkNumS(double* pkWhPeak, double* pkWhOffPeak){
         if(scanf("%lf", pkWhPeak) == 1 && *pkWhPeak > 0){
                 scanf("%c", &enter);
                 if(enter != '\n'){
-                        fflush(stdin);
+                        clean_stdin();
                         printf("\nError: Invalid Entry. Enter only a number.");
                         return 0;
                 }
@@ -124,21 +125,29 @@ int checkNumS(double* pkWhPeak, double* pkWhOffPeak){
 		if(scanf("%lf", pkWhOffPeak) == 1 && *pkWhOffPeak > 0){
                		scanf("%c", &enter);
           		if(enter != '\n'){    
-                       		fflush(stdin);
+                       		clean_stdin();
                        		printf("\nError: Invalid Entry. Enter only a number.");
                       		return 0;
                 	}
 			return 1;
 		}
 		else{
-			fflush(stdin);
+			clean_stdin();
 			printf("\nError: Invalid Entry. Enter only a positive number.");
 			return 0;
 		}
 	}
         else{
-		fflush(stdin);
+		clean_stdin();
                 printf("\nError: Invalid Entry. Enter only a positive number.");
                 return 0;
         }
+}
+
+void clean_stdin(void)
+{
+    int c;
+    do {
+        c = getchar();
+    } while (c != '\n' && c != EOF);
 }

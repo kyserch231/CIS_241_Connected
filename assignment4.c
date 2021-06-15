@@ -7,13 +7,18 @@ int checkNumS(double* pkWhPeak, double* pkWhOffPeak);
 
 int main(){
 	int i=1;
-	char in;
-	double kwh, kwhPeak, kwhOffPeak;
-	double owedS, owedR;
+	char in, enter;
 
 	while(i){
+		double kwh, kwhPeak, kwhOffPeak;
+	        double owedS=0, owedR=0;
+
 		printf("\nEnter an operation code: ");
 		scanf("%c",&in);
+		scanf("%c",&enter);
+		if(enter != '\n'){
+			in = 'D';
+		}
 	
 		switch(in){
 			case 'Q':
@@ -89,7 +94,7 @@ double S(double* kwhPeak,double* kwhOffPeak){
 int checkNum(double* pkWh){
 	char enter;
 	printf("\nEnter the number of kWh found on your meter: ");
-	if(scanf("%lf", pkWh) == 1){
+	if(scanf("%lf", pkWh) == 1 && *pkWh > 0){
 		scanf("%c", &enter);
 		if(enter != '\n'){
 			fflush(stdin);
@@ -100,40 +105,40 @@ int checkNum(double* pkWh){
 	}
 	else{
 		fflush(stdin);
-		printf("\nError: Invalid Entry. Enter only a number.");
+		printf("\nError: Invalid Entry. Enter only a positive number.");
 		return 0;
 	}
 }
 int checkNumS(double* pkWhPeak, double* pkWhOffPeak){
         char enter;
         printf("\nEnter the number of peak kWh found on your meter: ");
-        if(scanf("%lf", pkWhPeak) == 1){
+        if(scanf("%lf", pkWhPeak) == 1 && *pkWhPeak > 0){
                 scanf("%c", &enter);
                 if(enter != '\n'){
                         fflush(stdin);
                         printf("\nError: Invalid Entry. Enter only a number.");
                         return 0;
                 }
-        	printf("\nEnter the number of off-peak kWh found on your meter: ");
-		if(scanf("%lf", pkWhOffPeak) == 1){
-                	scanf("%c", &enter);
-               		if(enter != '\n'){    
-                        	fflush(stdin);
-                        	printf("\nError: Invalid Entry. Enter only a number.");
-                       		return 0;
+	
+       		printf("\nEnter the number of off-peak kWh found on your meter: ");
+		if(scanf("%lf", pkWhOffPeak) == 1 && *pkWhOffPeak > 0){
+               		scanf("%c", &enter);
+          		if(enter != '\n'){    
+                       		fflush(stdin);
+                       		printf("\nError: Invalid Entry. Enter only a number.");
+                      		return 0;
                 	}
+			return 1;
 		}
 		else{
 			fflush(stdin);
-                       	printf("\nError: Invalid Entry. Enter only a number.");
-                   	return 0;
+			printf("\nError: Invalid Entry. Enter only a positive number.");
+			return 0;
 		}
-        	
-		return 1;
 	}
         else{
 		fflush(stdin);
-                printf("\nError: Invalid Entry. Enter only a number.");
+                printf("\nError: Invalid Entry. Enter only a positive number.");
                 return 0;
         }
 }

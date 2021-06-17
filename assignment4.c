@@ -18,6 +18,7 @@ int main(){
 		scanf("%c",&in);
 		scanf("%c",&enter);
 		if(enter != '\n'){
+			clean_stdin();
 			in = 'D';
 		}
 	
@@ -63,9 +64,9 @@ int main(){
 				break;
 			default:
 				printf("\nError: Invalid Operation Code");
+				break;
 
 		}
-		clean_stdin();
 	}
 	return 0;
 }
@@ -149,5 +150,5 @@ void clean_stdin(void)
     int c;
     do {
         c = getchar();
-    } while (c != '\n' && c != EOF);
+    } while (c != '\n');
 }

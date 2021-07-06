@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+#include <complex.h>
+#include <tgmath.h>
+
+int main(){
+	struct complex c,cN;
+	double n;
+	printf("Enter a complex number\n");
+	scanf("%lf%*c%lf",creal(c),cimage(c));
+	printf("complex is %lf+%lfi\n",creal(c),cimag(c));
+	printf("Enter an integer\n");
+	scanf("%lf",&n);
+	cN=cpow(c,n);
+}
